@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <title>Calculator</title>
+
+    <link rel="stylesheet" href="index.css">
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="display">
+        0
+      </div>
+      <div class="buttons">
+        <div class="numbers">
+          <div>
+            <button class="button" onclick="updateDisplay(7)">7</button>
+            <button class="button" onclick="updateDisplay(8)">8</button>
+            <button class="button" onclick="updateDisplay(9)">9</button>
+          </div>
+          <div>
+            <button class="button" onclick="updateDisplay(4)">4</button>
+            <button class="button" onclick="updateDisplay(5)">5</button>
+            <button class="button" onclick="updateDisplay(6)">6</button>
+          </div>
+          <div>
+            <button class="button" onclick="updateDisplay(1)">1</button>
+            <button class="button" onclick="updateDisplay(2)">2</button>
+            <button class="button" onclick="updateDisplay(3)">3</button>
+          </div>
+          <div>
+            <button class="button" onclick="updateDisplay(0)">0</button>
+            <button class="button" onclick="updateDisplay('.')">.</button>
+            <button class="button equals" onclick="updateDisplay('=')">=</button>
+          </div>
+        </div>
+        <div class="operators">
+          <div class="operators-column">
+            <button class="button" onclick="updateDisplay(' / ')">/</button>
+            <button class="button" onclick="updateDisplay(' x ')">x</button>
+            <button class="button" onclick="updateDisplay(' - ')">-</button>
+            <button class="button" onclick="updateDisplay(' + ')">+</button>
+          </div>
+        </div>
+      </div>
+      <div class="clear" onclick="reset()">
+        <button>Clear</button>
+      </div>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+
+</html>
